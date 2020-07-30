@@ -5,7 +5,9 @@ mkdir src -p
 mkdir dist -p
 
 chmod +x parse.sh
+echo 'pixiv.cyfan.top' > tpl/CNAME
 cp -rf tpl/template.html src/index.html
+cp -rf tpl/CNAME src/CNAME
 
 curl -s "https://api.imjad.cn/pixiv/v2/?type=rank&mode=day&page=1" > tmp/pixiv.json
 ./parse.sh
@@ -28,4 +30,4 @@ sed -i "s~i.pximg.net~i.pixiv.cat~g" src/index.html
 cp -rf src/index.html dist/index.html
 
 rm -rf tmp
-echo 'pixiv.cyfan.top' > CNAME
+
