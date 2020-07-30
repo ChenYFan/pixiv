@@ -5,7 +5,7 @@ mkdir src -p
 mkdir dist -p
 
 chmod +x parse.sh
-echo 'pixiv.cyfan.top' > tpl/CNAME
+
 cp -rf tpl/template.html src/index.html
 cp -rf tpl/CNAME src/CNAME
 
