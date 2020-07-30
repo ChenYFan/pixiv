@@ -28,3 +28,4 @@ sed -i "s~i.pximg.net~i.pixiv.cat~g" src/index.html
 cp -rf src/index.html dist/index.html
 
 rm -rf tmp
+echo 'pixiv.cyfan.top' > CNAME
